@@ -25,3 +25,5 @@ cd libs/nebius
 export NEBIUS_API_KEY=<your-api-key>
 make integration_tests
 ```
+
+© Nebius BV, 2025
