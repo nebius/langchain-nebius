@@ -2,5 +2,7 @@
 
 from langchain_nebius.chat_models import ChatNebius
 from langchain_nebius.embeddings import NebiusEmbeddings
+from langchain_nebius.retrievers import NebiusRetriever
+from langchain_nebius.tools import NebiusRetrievalTool, nebius_search
 
-__all__ = ["ChatNebius", "NebiusEmbeddings"]
+__all__ = ["ChatNebius", "NebiusEmbeddings", "NebiusRetriever", "NebiusRetrievalTool", "nebius_search"]

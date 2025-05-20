@@ -4,11 +4,24 @@ build-backend = "poetry.core.masonry.api"
 
 [tool.poetry]
 name = "langchain-nebius"
-version = "0.1.0"
+version = "0.1.2"
 description = "LangChain integration for Nebius AI Studio"
 authors = ["Akim Tsvigun <aktsvigun@nebius.com>"]
 license = "MIT"
 readme = "README.md"
+repository = "https://github.com/nebius/langchain-nebius"
+keywords = ["langchain", "nebius", "llm", "ai", "embeddings", "retrieval", "rag"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+]
 
 [tool.poetry.dependencies]
 python = ">=3.8.1,<4.0"

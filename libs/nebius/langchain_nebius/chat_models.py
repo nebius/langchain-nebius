@@ -4,11 +4,14 @@ from typing import (
     Dict,
     List,
     Optional,
+    Union
 )
 
 import openai
 from langchain_core.language_models.chat_models import LangSmithParams
 from langchain_core.utils import from_env, secret_from_env
+from langchain_core.caches import BaseCache
+from langchain_core.callbacks.base import Callbacks
 from langchain_openai.chat_models.base import BaseChatOpenAI
 from pydantic import ConfigDict, Field, SecretStr, model_validator
 from typing_extensions import Self
