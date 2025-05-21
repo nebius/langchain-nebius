@@ -2,7 +2,7 @@
 
 This repository contains 1 package with Nebius AI Studio integrations with LangChain:
 
-- [langchain-nebius](PYPI_LINK)
+- [langchain-nebius](https://pypi.org/project/langchain-nebius/)
 
 ## Setup for Testing
 
