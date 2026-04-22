@@ -57,7 +57,7 @@ class NebiusEmbeddings(BaseModel, Embeddings):
             from __module_name__ import NebiusEmbeddings
 
             embed = NebiusEmbeddings(
-                model="BAAI/bge-en-icl",
+                model="Qwen/Qwen3-Embedding-8B",
                 # api_key="...",
                 # other params...
             )
@@ -103,9 +103,9 @@ class NebiusEmbeddings(BaseModel, Embeddings):
 
     client: Any = Field(default=None, exclude=True)  #: :meta private:
     async_client: Any = Field(default=None, exclude=True)  #: :meta private:
-    model: str = "BAAI/bge-en-icl"
+    model: str = "Qwen/Qwen3-Embedding-8B"
     """Embeddings model name to use.
-    Instead, use 'BAAI/bge-en-icl' for example.
+    Instead, use 'Qwen/Qwen3-Embedding-8B' for example.
     """
     dimensions: Optional[int] = None
     """The number of dimensions the resulting output embeddings should have.
