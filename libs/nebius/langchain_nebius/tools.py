@@ -99,7 +99,7 @@ class NebiusRetrievalTool(BaseTool):
         Returns:
             A string containing the content of the retrieved documents.
         """
-        docs = self.retriever.get_relevant_documents(query, k=k)
+        docs = self.retriever.invoke(query)
         if not docs:
             return "No relevant documents found."
         
@@ -121,7 +121,7 @@ class NebiusRetrievalTool(BaseTool):
         Returns:
             A string containing the content of the retrieved documents.
         """
-        docs = await self.retriever.aget_relevant_documents(query, k=k)
+        docs = await self.retriever.ainvoke(query)
         if not docs:
             return "No relevant documents found."
         
@@ -155,7 +155,7 @@ def nebius_search(query: str, retriever: NebiusRetriever, k: int = 3) -> str:
     Returns:
         Content of the most relevant documents.
     """
-    docs = retriever.get_relevant_documents(query, k=k)
+    docs = retriever.invoke(query)
     if not docs:
         return "No relevant documents found."
     
