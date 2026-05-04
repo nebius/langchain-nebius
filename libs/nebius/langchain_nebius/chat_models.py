@@ -272,10 +272,14 @@ class ChatNebius(BaseChatOpenAI):
     def lc_secrets(self) -> Dict[str, str]:
         """A map of constructor argument names to secret ids.
 
-        For example,
-            {"nebius_api_key": "NEBIUS_API_KEY"}
+        Both `nebius_api_key` and the inherited `openai_api_key` (from
+        `BaseChatOpenAI`) point at the same `NEBIUS_API_KEY` env var so
+        that serialization roundtrips work correctly.
         """
-        return {"nebius_api_key": "NEBIUS_API_KEY"}
+        return {
+            "nebius_api_key": "NEBIUS_API_KEY",
+            "openai_api_key": "NEBIUS_API_KEY",
+        }
 
     @classmethod
     def get_lc_namespace(cls) -> List[str]:
