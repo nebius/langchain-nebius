@@ -45,12 +45,12 @@ class ChatNebius(BaseChatOpenAI):
         max_retries: int
             Max number of retries.
         api_key: Optional[str]
-            Nebius API key. If not passed in will be read from env var OPENAI_API_KEY.
+            Nebius API key. If not passed in will be read from env var NEBIUS_API_KEY.
 
     Instantiate:
         .. code-block:: python
 
-            from langhcain_nebius import ChatNebius
+            from langchain_nebius import ChatNebius
 
             llm = ChatNebius(
                 model="deepseek-ai/DeepSeek-V3",
