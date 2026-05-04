@@ -122,7 +122,7 @@ class NebiusEmbeddings(BaseModel, Embeddings):
     """
     nebius_api_base: str = Field(
         default_factory=from_env(
-            "NEBIUS_API_BASE", default="https://api.studio.nebius.ai/v1/"
+            "NEBIUS_API_BASE", default="https://api.tokenfactory.nebius.com/v1/"
         ),
         alias="base_url",
     )
