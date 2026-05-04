@@ -282,6 +282,11 @@ class ChatNebius(BaseChatOpenAI):
         """Get the namespace of the langchain object."""
         return ["langchain", "chat_models", "nebius"]
 
+    @classmethod
+    def is_lc_serializable(cls) -> bool:
+        """Return whether this model can be serialized by LangChain."""
+        return True
+
     @property
     def lc_attributes(self) -> Dict[str, Any]:
         """List of attribute names that should be included in the serialized kwargs.
