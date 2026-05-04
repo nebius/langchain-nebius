@@ -66,7 +66,7 @@ def test_chat_nebius_extra_kwargs() -> None:
 
 
 def test_stream() -> None:
-    """Test streaming tokens from Nebius AI Studio."""
+    """Test streaming tokens from Nebius Token Factory."""
     llm = ChatNebius()
 
     for token in llm.stream("I'm Pickle Rick"):
@@ -74,7 +74,7 @@ def test_stream() -> None:
 
 
 async def test_astream() -> None:
-    """Test streaming tokens from Nebius AI Studio."""
+    """Test streaming tokens from Nebius Token Factory."""
     llm = ChatNebius()
 
     async for token in llm.astream("I'm Pickle Rick"):

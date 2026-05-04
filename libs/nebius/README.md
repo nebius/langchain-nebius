@@ -1,6 +1,6 @@
 # LangChain Nebius Integration
 
-This package provides LangChain integration for Nebius AI Studio, enabling seamless use of Nebius AI Studio's chat and embedding models within LangChain.
+This package provides LangChain integration for **Nebius Token Factory** (formerly Nebius AI Studio), enabling chat, embeddings, retrieval, and tool-calling against Nebius's open-model inference platform.
 
 ## Installation
 
@@ -214,7 +214,7 @@ For more examples, see the [examples](examples/) directory.
 
 ## Documentation
 
-For more details, refer to the [Nebius AI Studio API Documentation](https://studio.nebius.ai/docs/api-reference).
+For more details, refer to the [Nebius Token Factory documentation](https://docs.tokenfactory.nebius.com/).
 
 ## License
 

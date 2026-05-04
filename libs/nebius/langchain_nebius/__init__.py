@@ -1,4 +1,4 @@
-"""This package provides the Nebius AI Studio integration for LangChain."""
+"""This package provides the Nebius Token Factory integration for LangChain."""
 
 from langchain_nebius.chat_models import ChatNebius
 from langchain_nebius.embeddings import NebiusEmbeddings

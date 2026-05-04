@@ -1,4 +1,4 @@
-"""Wrapper around Nebius AI Studio's Chat Completions API."""
+"""Wrapper around Nebius Token Factory's Chat Completions API."""
 from typing import (
     Any,
     Dict,
@@ -137,7 +137,7 @@ class ChatNebius(BaseChatOpenAI):
 
             from pydantic import BaseModel, Field
 
-            # Only certain models support tool calling, check the Nebius AI Studio website to confirm compatibility
+            # Only certain models support tool calling, check the Nebius Token Factory website to confirm compatibility
             llm = ChatNebius(model="meta-llama/Llama-3.3-70B-Instruct-fast")
 
             class GetWeather(BaseModel):

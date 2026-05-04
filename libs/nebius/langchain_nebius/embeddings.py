@@ -1,4 +1,4 @@
-"""Wrapper around Nebius AI Studio's Embeddings API."""
+"""Wrapper around Nebius Token Factory's Embeddings API."""
 
 import logging
 import warnings
@@ -44,7 +44,7 @@ class NebiusEmbeddings(BaseModel, Embeddings):
 
     Key init args — completion params:
         model: str
-            Name of Nebius AI Studio model to use.
+            Name of Nebius Token Factory model to use.
 
     Key init args — client params:
       api_key: Optional[SecretStr]
