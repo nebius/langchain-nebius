@@ -24,7 +24,7 @@ class TestNebiusRetriever(unittest.TestCase):
         
         # Add required attributes for the NebiusEmbeddings
         self.mock_embeddings.nebius_api_key = None
-        self.mock_embeddings.nebius_api_base = "https://api.studio.nebius.ai/v1/"
+        self.mock_embeddings.nebius_api_base = "https://api.tokenfactory.nebius.com/v1/"
         self.mock_embeddings.client = None
         self.mock_embeddings.async_client = None
         self.mock_embeddings.request_timeout = None
@@ -84,7 +84,7 @@ class TestNebiusRetriever(unittest.TestCase):
         # Test default values
         self.assertEqual(retriever.k, 3)
         self.assertEqual(len(retriever.docs), 3)
-        self.assertEqual(retriever.nebius_api_base, "https://api.studio.nebius.ai/v1/")
+        self.assertEqual(retriever.nebius_api_base, "https://api.tokenfactory.nebius.com/v1/")
 
     def test_initialization_with_custom_parameters(self):
         """Test retriever initialization with custom parameters."""
