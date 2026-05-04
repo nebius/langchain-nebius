@@ -1,10 +1,10 @@
-"""Test Nebius AI Studio embeddings."""
+"""Test Nebius Token Factory embeddings."""
 
 from langchain_nebius import NebiusEmbeddings
 
 
 def test_langchain_nebius_embed_documents() -> None:
-    """Test Nebius AI Studio embeddings."""
+    """Test Nebius Token Factory embeddings."""
     documents = ["foo bar", "bar foo"]
     embedding = NebiusEmbeddings()
     output = embedding.embed_documents(documents)
@@ -13,7 +13,7 @@ def test_langchain_nebius_embed_documents() -> None:
 
 
 def test_langchain_nebius_embed_query() -> None:
-    """Test Nebius AI Studio embeddings."""
+    """Test Nebius Token Factory embeddings."""
     query = "foo bar"
     embedding = NebiusEmbeddings()
     output = embedding.embed_query(query)
@@ -21,7 +21,7 @@ def test_langchain_nebius_embed_query() -> None:
 
 
 async def test_langchain_nebius_aembed_documents() -> None:
-    """Test Nebius AI Studio embeddings asynchronous."""
+    """Test Nebius Token Factory embeddings asynchronous."""
     documents = ["foo bar", "bar foo"]
     embedding = NebiusEmbeddings()
     output = await embedding.aembed_documents(documents)
@@ -30,7 +30,7 @@ async def test_langchain_nebius_aembed_documents() -> None:
 
 
 async def test_langchain_nebius_aembed_query() -> None:
-    """Test Nebius AI Studio embeddings asynchronous."""
+    """Test Nebius Token Factory embeddings asynchronous."""
     query = "foo bar"
     embedding = NebiusEmbeddings()
     output = await embedding.aembed_query(query)
