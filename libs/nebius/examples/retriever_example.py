@@ -41,7 +41,7 @@ def main():
     # Create a chat model
     print("Initializing chat model...")
     llm = ChatNebius(
-        model="meta-llama/Llama-3.3-70B-Instruct-fast",
+        model="Qwen/Qwen3-32B",
         temperature=0
     )
 

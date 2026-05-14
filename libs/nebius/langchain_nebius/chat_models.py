@@ -1,4 +1,4 @@
-"""Wrapper around Nebius AI Studio's Chat Completions API."""
+"""Wrapper around Nebius Token Factory's OpenAI-compatible Chat Completions API."""
 from typing import (
     Any,
     Dict,
@@ -80,7 +80,7 @@ class ChatNebius(BaseChatOpenAI):
                 content="J'adore la programmation.",
                 response_metadata={
                     'token_usage': {'completion_tokens': 9, 'prompt_tokens': 32, 'total_tokens': 41},
-                    'model_name': 'meta-llama/Llama-3.3-70B-Instruct-fast',
+                    'model_name': 'Qwen/Qwen3-32B',
                     'system_fingerprint': None,
                     'finish_reason': 'stop',
                     'logprobs': None
@@ -104,7 +104,7 @@ class ChatNebius(BaseChatOpenAI):
             content=' programm' id='run-1bc996b5-293f-4114-96a1-e0f755c05eb9'
             content='ation' id='run-1bc996b5-293f-4114-96a1-e0f755c05eb9'
             content='.' id='run-1bc996b5-293f-4114-96a1-e0f755c05eb9'
-            content='' response_metadata={'finish_reason': 'stop', 'model_name': 'meta-llama/Llama-3.3-70B-Instruct-fast'} id='run-1bc996b5-293f-4114-96a1-e0f755c05eb9'
+            content='' response_metadata={'finish_reason': 'stop', 'model_name': 'Qwen/Qwen3-32B'} id='run-1bc996b5-293f-4114-96a1-e0f755c05eb9'
 
 
     Async:
@@ -124,7 +124,7 @@ class ChatNebius(BaseChatOpenAI):
                 content="J'adore la programmation.",
                 response_metadata={
                     'token_usage': {'completion_tokens': 9, 'prompt_tokens': 32, 'total_tokens': 41},
-                    'model_name': 'meta-llama/Llama-3.3-70B-Instruct-fast',
+                    'model_name': 'Qwen/Qwen3-32B',
                     'system_fingerprint': None,
                     'finish_reason': 'stop',
                     'logprobs': None
@@ -137,8 +137,8 @@ class ChatNebius(BaseChatOpenAI):
 
             from pydantic import BaseModel, Field
 
-            # Only certain models support tool calling, check the Nebius AI Studio website to confirm compatibility
-            llm = ChatNebius(model="meta-llama/Llama-3.3-70B-Instruct-fast")
+            # Only certain models support tool calling; check Nebius Token Factory docs for compatibility
+            llm = ChatNebius(model="Qwen/Qwen3-32B")
 
             class GetWeather(BaseModel):
                 '''Get the current weather in a given location'''
@@ -260,7 +260,7 @@ class ChatNebius(BaseChatOpenAI):
                     'prompt_tokens': 19,
                     'total_tokens': 23
                     },
-                'model_name': 'meta-llama/Llama-3.3-70B-Instruct-fast',
+                'model_name': 'Qwen/Qwen3-32B',
                 'system_fingerprint': None,
                 'finish_reason': 'eos',
                 'logprobs': None
@@ -308,7 +308,7 @@ class ChatNebius(BaseChatOpenAI):
         params["ls_provider"] = "nebius"
         return params
 
-    model_name: str = Field(default="meta-llama/Llama-3.3-70B-Instruct-fast", alias="model")
+    model_name: str = Field(default="Qwen/Qwen3-32B", alias="model")
     """Model name to use."""
     nebius_api_key: Optional[SecretStr] = Field(
         alias="api_key",

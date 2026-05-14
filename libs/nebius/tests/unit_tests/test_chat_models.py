@@ -107,7 +107,7 @@ def mock_completion() -> dict:
         "id": "chatcmpl-7fcZavknQda3SQ",
         "object": "chat.completion",
         "created": 1689989000,
-        "model": "meta-llama/Llama-3.3-70B-Instruct-fast",
+        "model": "Qwen/Qwen3-32B",
         "choices": [
             {
                 "index": 0,
