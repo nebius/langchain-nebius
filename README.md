@@ -1,24 +1,24 @@
-# 🦜️🔗 LangChain Nebius
+# LangChain Nebius
 
-This repository contains 1 package with Nebius AI Studio integrations with LangChain:
+This repository contains the **[langchain-nebius](https://pypi.org/project/langchain-nebius/)** package: LangChain integrations for **[Nebius Token Factory](https://tokenfactory.nebius.com/)** (chat models, embeddings, retrievers, and tools).
 
-- [langchain-nebius](https://pypi.org/project/langchain-nebius/)
+Package source and PyPI README live under [`libs/nebius`](libs/nebius/).
 
-## Setup for Testing
+## Setup for testing
 
 ```bash
 cd libs/nebius
-poetry install --with lint,typing,test,test_integration,
+poetry install --with lint,typing,test,test_integration
 ```
 
-## Running the Unit Tests
+## Running the unit tests
 
 ```bash
 cd libs/nebius
 make tests
 ```
 
-## Running the Integration Tests
+## Running the integration tests
 
 ```bash
 cd libs/nebius

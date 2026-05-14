@@ -1,4 +1,4 @@
-"""This package provides the Nebius AI Studio integration for LangChain."""
+"""LangChain integration for Nebius Token Factory (chat, embeddings, retrieval, tools)."""
 
 from langchain_nebius.chat_models import ChatNebius
 from langchain_nebius.embeddings import NebiusEmbeddings
