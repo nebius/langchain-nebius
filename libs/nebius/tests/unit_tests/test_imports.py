@@ -1,6 +1,12 @@
 from langchain_nebius import __all__
 
-EXPECTED_ALL = ["ChatNebius", "NebiusEmbeddings", "NebiusRetriever"]
+EXPECTED_ALL = [
+    "ChatNebius",
+    "NebiusEmbeddings",
+    "NebiusRetriever",
+    "NebiusRetrievalTool",
+    "nebius_search",
+]
 
 
 def test_all_imports() -> None:
