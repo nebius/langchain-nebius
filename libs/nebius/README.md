@@ -32,7 +32,7 @@ You can also pass `api_key` / `base_url` when constructing clients (see below).
 
 ## Chat models
 
-`ChatNebius` reads `NEBIUS_API_KEY` from the environment when `api_key` is omitted. The default chat model is `meta-llama/Llama-3.3-70B-Instruct-fast` unless you pass `model=...`.
+`ChatNebius` reads `NEBIUS_API_KEY` from the environment when `api_key` is omitted. The default chat model is `Qwen/Qwen3-32B` unless you pass `model=...`.
 
 ```python
 from langchain_nebius import ChatNebius
@@ -157,7 +157,7 @@ docs = [
 
 embeddings = NebiusEmbeddings()
 retriever = NebiusRetriever(embeddings=embeddings, docs=docs, k=3)
-llm = ChatNebius(model="meta-llama/Llama-3.3-70B-Instruct-fast")
+llm = ChatNebius(model="Qwen/Qwen3-32B")
 
 prompt = ChatPromptTemplate.from_template(
     """Answer the question based only on the following context:
@@ -219,7 +219,7 @@ retrieval_tool = NebiusRetrievalTool(
     description="Search for information in the document collection",
 )
 
-llm = ChatNebius(model="meta-llama/Llama-3.3-70B-Instruct-fast")
+llm = ChatNebius(model="Qwen/Qwen3-32B")
 
 system_prompt = """You are an assistant that answers questions based on the available documents.
 Use the document_search tool to find relevant information before answering."""

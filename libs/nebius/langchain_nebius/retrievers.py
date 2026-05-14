@@ -79,7 +79,7 @@ class NebiusRetriever(BaseRetriever):
             Question: {question}\"\"\"
             )
 
-            llm = ChatNebius(model="meta-llama/Llama-3.3-70B-Instruct-fast")
+            llm = ChatNebius(model="Qwen/Qwen3-32B")
 
             def format_docs(docs):
                 return "\\n\\n".join(doc.page_content for doc in docs)
