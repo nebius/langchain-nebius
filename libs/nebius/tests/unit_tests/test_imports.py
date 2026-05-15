@@ -10,4 +10,6 @@ EXPECTED_ALL = [
 
 
 def test_all_imports() -> None:
-    assert sorted(EXPECTED_ALL) == sorted(__all__), print(f"Expected {EXPECTED_ALL} but got {__all__}")
+    assert sorted(EXPECTED_ALL) == sorted(__all__), (
+        f"Expected {EXPECTED_ALL} but got {__all__}"
+    )
