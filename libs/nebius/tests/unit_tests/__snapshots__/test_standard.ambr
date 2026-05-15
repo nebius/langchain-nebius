@@ -1,0 +1,40 @@
+# serializer version: 1
+# name: TestNebiusStandard.test_serdes[serialized]
+  dict({
+    'id': list([
+      'langchain',
+      'chat_models',
+      'nebius',
+      'ChatNebius',
+    ]),
+    'kwargs': dict({
+      'max_retries': 2,
+      'max_tokens': 100,
+      'model_name': 'meta-llama/Llama-3.3-70B-Instruct-fast',
+      'nebius_api_base': 'https://api.tokenfactory.nebius.com/v1/',
+      'nebius_api_key': dict({
+        'id': list([
+          'NEBIUS_API_KEY',
+        ]),
+        'lc': 1,
+        'type': 'secret',
+      }),
+      'openai_api_key': dict({
+        'id': list([
+          'NEBIUS_API_KEY',
+        ]),
+        'lc': 1,
+        'type': 'secret',
+      }),
+      'openai_proxy': None,
+      'output_version': None,
+      'request_timeout': 60.0,
+      'stop': list([
+      ]),
+      'temperature': 0.0,
+    }),
+    'lc': 1,
+    'name': 'ChatNebius',
+    'type': 'constructor',
+  })
+# ---
